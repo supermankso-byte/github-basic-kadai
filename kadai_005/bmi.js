@@ -1,4 +1,5 @@
-wight = "68";
-tall = '1.7';
+let weight = 68;
+let tall = 1.7;
+let bmi = (weight/[tall*tall]);
 
-console.log(wight/(tall*tall));
+console.log(bmi);
