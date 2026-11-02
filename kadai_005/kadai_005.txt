@@ -1,0 +1,37 @@
+dnagerousmankim@gimseong-ung-ui-Macmini 侍engineer % mkdir git_challenge
+dnagerousmankim@gimseong-ung-ui-Macmini 侍engineer % touch hello_world.txt
+dnagerousmankim@gimseong-ung-ui-Macmini git_challenge % echo 'Hello,world!' > hello_world.txt
+dnagerousmankim@gimseong-ung-ui-Macmini git_challenge % pwd
+/Users/dnagerousmankim/Desktop/侍engineer/git_challenge
+dnagerousmankim@gimseong-ung-ui-Macmini git_challenge % git add hello_world.txt
+dnagerousmankim@gimseong-ung-ui-Macmini git_challenge % git commit -m "1回目のコミット"
+[main (root-commit) 319365f] 1回目のコミット
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+dnagerousmankim@gimseong-ung-ui-Macmini git_challenge % echo 'こんにちは,世界!' >> hello_world.txt
+dnagerousmankim@gimseong-ung-ui-Macmini git_challenge % cat hello_world.txt
+Hello,world!
+こんにちは,世界!
+dnagerousmankim@gimseong-ung-ui-Macmini git_challenge % git commit -m "2回目のコミット"
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   hello_world.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.git-backup/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+dnagerousmankim@gimseong-ung-ui-Macmini git_challenge % git add hello_world.txt
+dnagerousmankim@gimseong-ung-ui-Macmini git_challenge % git commit -m "2回目のコミット"
+[main d04077a] 2回目のコミット
+ 1 file changed, 1 insertion(+)
+dnagerousmankim@gimseong-ung-ui-Macmini git_challenge % git log --oneline
+d04077a (HEAD -> main) 2回目のコミット
+319365f 1回目のコミット
+dnagerousmankim@gimseong-ung-ui-Macmini git_challenge % cd ..
+dnagerousmankim@gimseong-ung-ui-Macmini 侍engineer % mkdir kadai_005
+dnagerousmankim@gimseong-ung-ui-Macmini 侍engineer % touch kadai_005.txt
+dnagerousmankim@gimseong-ung-ui-Macmini 侍engineer % 
