@@ -1,5 +1,23 @@
 dnagerousmankim@gimseong-ung-ui-Macmini 侍engineer % mkdir git_challenge
 dnagerousmankim@gimseong-ung-ui-Macmini 侍engineer % touch hello_world.txt
+dnagerousmankim@gimseong-ung-ui-Macmini 侍engineer % mv ~/Desktop/侍engineer/hello_world.txt ~/Desktop/侍engineer/git_challenge
+dnagerousmankim@gimseong-ung-ui-Macmini git_challenge % pwd /Users/dnagerousmankim/Desktop/侍engineer/git_challenge
+dnagerousmankim@gimseong-ung-ui-Macmini git_challenge % git init
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: will change to "main" in Git 3.0. To configure the initial branch name
+hint: to use in all of your new repositories, which will suppress this warning,
+hint: call:
+hint:
+hint: 	git config --global init.defaultBranch <name>
+hint:
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint:
+hint: 	git branch -m <name>
+hint:
+hint: Disable this message with "git config set advice.defaultBranchName false"
+Initialized empty Git repository in /Users/dnagerousmankim/Desktop/侍engineer/git_challenge/.git/
+dnagerousmankim@gimseong-ung-ui-Macmini git_challenge % git branch -M main
 dnagerousmankim@gimseong-ung-ui-Macmini git_challenge % echo 'Hello,world!' > hello_world.txt
 dnagerousmankim@gimseong-ung-ui-Macmini git_challenge % pwd
 /Users/dnagerousmankim/Desktop/侍engineer/git_challenge
