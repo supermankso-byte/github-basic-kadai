@@ -1,0 +1,53 @@
+dnagerousmankim@gimseong-ung-ui-Macmini ~ % pwd
+/Users/dnagerousmankim
+dnagerousmankim@gimseong-ung-ui-Macmini ~ % cd ~/Desktop/侍engineer
+dnagerousmankim@gimseong-ung-ui-Macmini 侍engineer % mkdir git_challenge
+dnagerousmankim@gimseong-ung-ui-Macmini 侍engineer % cd git_challenge
+dnagerousmankim@gimseong-ung-ui-Macmini git_challenge % touch hello_world.txt
+dnagerousmankim@gimseong-ung-ui-Macmini git_challenge % git init
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: will change to "main" in Git 3.0. To configure the initial branch name
+hint: to use in all of your new repositories, which will suppress this warning,
+hint: call:
+hint:
+hint: 	git config --global init.defaultBranch <name>
+hint:
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint:
+hint: 	git branch -m <name>
+hint:
+hint: Disable this message with "git config set advice.defaultBranchName false"
+Initialized empty Git repository in /Users/dnagerousmankim/Desktop/侍engineer/git_challenge/.git/
+dnagerousmankim@gimseong-ung-ui-Macmini git_challenge % git branch -M main
+dnagerousmankim@gimseong-ung-ui-Macmini git_challenge % git remote add origin https://github.com/supermankso-byte/git_challenge.git
+dnagerousmankim@gimseong-ung-ui-Macmini git_challenge % git remote -v
+origin	https://github.com/supermankso-byte/git_challenge.git (fetch)
+origin	https://github.com/supermankso-byte/git_challenge.git (push)
+dnagerousmankim@gimseong-ung-ui-Macmini git_challenge %  ssh -T git@github.com
+Enter passphrase for key '/Users/dnagerousmankim/.ssh/id_rsa': 
+Hi supermankso-byte! You've successfully authenticated, but GitHub does not provide shell access.
+dnagerousmankim@gimseong-ung-ui-Macmini git_challenge % echo "Hello, world!" >> hello_wolrd.txt
+dquote> 
+dnagerousmankim@gimseong-ung-ui-Macmini git_challenge % echo 'Hello, world!' >> hello_world.txt
+dnagerousmankim@gimseong-ung-ui-Macmini git_challenge % git add .
+dnagerousmankim@gimseong-ung-ui-Macmini git_challenge % git commit -m "hello_world.txtを追加"
+[main (root-commit) 7464e92] hello_world.txtを追加
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+dnagerousmankim@gimseong-ung-ui-Macmini git_challenge % echo 'こんにちは、世界' >> hello_world.txt
+dnagerousmankim@gimseong-ung-ui-Macmini git_challenge % git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+	add
+dnagerousmankim@gimseong-ung-ui-Macmini git_challenge % git add .
+dnagerousmankim@gimseong-ung-ui-Macmini git_challenge % git commit -m "日本語訳を追記"
+[main 55da2b4] 日本語訳を追記
+ 1 file changed, 1 insertion(+)
+dnagerousmankim@gimseong-ung-ui-Macmini git_challenge % git log --oneline
+55da2b4 (HEAD -> main) 日本語訳を追記
+7464e92 hello_world.txtを追加
+dnagerousmankim@gimseong-ung-ui-Macmini git_challenge % 
+
+
